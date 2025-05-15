@@ -5,20 +5,23 @@ import './App.css'
 
 
 // () => {}
+// component = html + css +js
+const MyComponentThinh = () => {
+  return (
+    <div className='myclass'>component của Thịnh
+      <br />
+      <div>
+        <input type='email' placeholder='Enter email'></input>
+        <input type='password' placeholder='Enter password'></input>
+        <button>Sign In</button>
+      </div>
+    </div>
+  );
+}
 
-const App = ()=> {
+const App = () => {
   const [count, setCount] = useState(0)
 
-
-  // function MyFunction(){
-  //   console.log("Ahihi")
-  // }
-
-  const MyFunction = ()=>{
-    console.log("hello thinh");
-  }
-   MyFunction();
-  
   return (
     <>
       <div>
@@ -30,6 +33,7 @@ const App = ()=> {
         </a>
       </div>
       <h1>hello world & thinh nguyen</h1>
+      <MyComponentThinh />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
